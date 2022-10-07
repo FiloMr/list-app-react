@@ -20,10 +20,7 @@ class Users extends Component {
   removeUser = (userIndex) => {
     this.setState((state) => {
       return {
-        users: state.users.filter((user, index) => {
-          
-          index !== userIndex;
-        }),
+        users: state.users.filter((user, index) => index !== userIndex),
       };
     });
   };
@@ -32,7 +29,7 @@ class Users extends Component {
       <div className="user-main">
         <h1>User's List</h1>
         <form onSubmit={this.addUser}>
-          <input type="text" placeholder="Enter name" ref={this.input} />
+          <input type="text" placeholder="Enter name" ref={this.input} maxLength={20}  />
           <button type="submit">Add User</button>
         </form>
         <UsersList
