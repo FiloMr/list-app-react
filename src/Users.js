@@ -12,10 +12,13 @@ class Users extends Component {
   addUser = (event) => {
     event.preventDefault();
     let newuser = this.input.current.value;
-    this.setState((state) => {
-      return { users: state.users.concat(newuser) };
-    });
-    this.input.current.value = "";
+    if (newuser !== "") {
+      this.setState((state) => {
+        return { users: state.users.concat(newuser) };
+      });
+      this.input.current.value = "";
+    }
+    else alert("POdaj nazwe uzytkownika do dodania")
   };
   removeUser = (userIndex) => {
     this.setState((state) => {
@@ -27,9 +30,14 @@ class Users extends Component {
   render() {
     return (
       <div className="user-main">
-        <h1>User's List</h1>
+        <h1>Users List</h1>
         <form onSubmit={this.addUser}>
-          <input type="text" placeholder="Enter name" ref={this.input} maxLength={20}  />
+          <input
+            type="text"
+            placeholder="Enter name"
+            ref={this.input}
+            maxLength={17}
+          />
           <button type="submit">Add User</button>
         </form>
         <UsersList
