@@ -1,11 +1,11 @@
-.user-main form input {
+.posts-main form input {
   padding: 0.6em;
   font-size: 1em;
   border: 2px solid white;
   outline: 0;
   width: 10em;
 }
-.user-main form button {
+.posts-main form button {
   padding: 0.6em;
   font-size: 1em;
   margin: 0.8em;
@@ -13,7 +13,7 @@
   color: white;
   border: #0066ff;
 }
-.user-main form button:hover {
+.posts-main form button:hover {
     background-color: #003399; 
     cursor: pointer;
     border: #003399;

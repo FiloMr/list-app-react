@@ -1,7 +1,6 @@
 .list {
   list-style: none;
   padding-left: 0;
-  width: 15em;
 }
 .list li {
   background-color: rgba(255, 255, 255, 0.5);
@@ -12,14 +11,14 @@
   border-radius: 0.3em;
   position: relative;
 }
-.list li:hover{
-    background-color: pink;
+.list li:hover {
+  background-color: pink;
 }
-.list li span{
-    position: absolute;
-    right: 1em;
+.list li span {
+  position: absolute;
+  right: 1em;
 }
-.list li span:hover{
+.list li span:hover {
   color: red;
   cursor: pointer;
 }
