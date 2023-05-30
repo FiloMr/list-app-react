@@ -59,7 +59,7 @@ function PostsStates() {
 
   return (
     <div className="posts-main">
-      <h1>Posts List</h1>
+      <h1>Add Post</h1>
       <form onSubmit={addPost}>
         <input
           type="text"
@@ -71,7 +71,7 @@ function PostsStates() {
         <button type="submit">Add Post</button>
       </form>
       <div className="count-articles">
-        <h1>Licznik postów: {postCount}</h1>
+        <h1>Count Posts: {postCount}</h1>
       </div>
       <PostsList
         postsList={posts}

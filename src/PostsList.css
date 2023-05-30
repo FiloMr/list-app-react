@@ -12,11 +12,12 @@
   position: relative;
 }
 .list li:hover {
-  background-color: pink;
+  background-color: rgb(46, 235, 147);
 }
 .list li span {
   position: absolute;
   right: 1em;
+  bottom: 0.2em;
 }
 .list li span:hover {
   color: red;
